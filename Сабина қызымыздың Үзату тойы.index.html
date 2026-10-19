@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Сабинаның Үзату тойы</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+      background: linear-gradient(145deg, #f9e8e5, #fff8ed, #f2d5d0);
+      font-family: Georgia, "Times New Roman", serif;
+      color: #754b48;
+      text-align: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 540px;
+      padding: 45px 28px;
+      background: rgba(255, 252, 246, 0.94);
+      border: 2px solid #c7a56b;
+      outline: 1px solid #c7a56b;
+      outline-offset: 7px;
+      border-radius: 180px 180px 18px 18px;
+      box-shadow: 0 12px 40px rgba(111, 67, 58, 0.13);
+    }
+
+    .ornament {
+      color: #b18a4d;
+      font-size: 30px;
+      letter-spacing: 8px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(27px, 6vw, 38px);
+      font-weight: normal;
+      line-height: 1.4;
+      margin: 0 0 24px;
+      color: #885b56;
+    }
+
+    /* Декоративная полоска после обращения */
+    .separator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 22px auto 26px;
+      max-width: 290px;
+      color: #b18a4d;
+    }
+
+    .separator::before,
+    .separator::after {
+      content: "";
+      height: 1px;
+      flex: 1;
+      background: linear-gradient(
+        to right,
+        transparent,
+        #b18a4d
+      );
+    }
+
+    .separator::after {
+      background: linear-gradient(
+        to left,
+        transparent,
+        #b18a4d
+      );
+    }
+
+    .separator span {
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    .flower {
+      font-size: 35px;
+      margin: 15px 0;
+    }
+
+    .date {
+      margin-top: 25px;
+      font-size: 23px;
+      color: #9a7442;
+    }
+
+    .time {
+      font-size: 20px;
+      margin: 12px 0 25px;
+    }
+
+    .place {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .address {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+
+    .map-link {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 30px;
+      border: 1px solid #b18a4d;
+      color: #754b48;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      transition: background 0.2s;
+    }
+
+    .map-link:hover {
+      background: #f3e4d1;
+    }
+
+    .ornament-bottom {
+      color: #b18a4d;
+      font-size: 25px;
+      letter-spacing: 8px;
+      margin-top: 28px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+
+    <div class="ornament">❦ ❀ ❦</div>
+
+    <h1>
+      Құрметті қонақтар!
+    </h1>
+
+    <!-- Красивая золотая разделительная полоска -->
+    <div class="separator">
+      <span>❧</span>
+    </div>
+
+    <h1>
+      Сабина қызымыздың Үзату тойы туралы<br>
+      еске саламыз!
+    </h1>
+
+    <div class="flower">🌸</div>
+
+    <div class="date">2026 жылғы 30 қазан</div>
+
+    <div class="time">Кешкі сағат 18:00-де</div>
+
+    <div class="place">«Алтын Ғасыр» мейрамханасы</div>
+
+    <div class="address">
+      Ақтау қаласы,<br>
+      Шығыс-2 шағын ауданы, 214
+    </div>
+
+    <a
+      class="map-link"
+      href="https://2gis.kz/aktau/search/%D0%90%D0%BB%D1%82%D1%8B%D0%BD%20%D2%92%D0%B0%D1%81%D1%8B%D1%80"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      📍 2ГИС картасынан ашу ↗️
+    </a>
+
+    <div class="ornament-bottom">❦ ❀ ❦</div>
+
+  </main>
+</body>
+</html>
